@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTextFieldDelegate>
 
+@property NSString* ipAddress;
+@property (assign) IBOutlet NSImageView* qrCodeImage;
+@property (assign) IBOutlet NSTextField* qrTextField;
 @property (assign) IBOutlet NSWindow *window;
 
 @end
